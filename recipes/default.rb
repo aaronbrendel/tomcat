@@ -31,7 +31,7 @@ directory '/opt/tomcat' do
 	group 'tomcat'
 	recursive true
 	action :create
-#end
+end
 
 
 
