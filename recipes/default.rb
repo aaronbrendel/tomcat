@@ -27,11 +27,10 @@ remote_file "/tmp/apache-tomcat-8.5.24.tar.gz" do
 	mode 00644
 end
 
-#Commented out because it doesn't seem to work as intended. Added a command execution below. Cludge, I'm sure....but it'll work.
-#directory '/opt/tomcat' do
-	#group 'tomcat'
-	#recursive true
-	#action :create
+directory '/opt/tomcat' do
+	group 'tomcat'
+	recursive true
+	action :create
 #end
 
 
